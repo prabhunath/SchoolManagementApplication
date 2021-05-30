@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "6bde1a8e-ef22-4992-b37d-1beb61736f6b",
+		"name": "SchoolManagementApplication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET all Students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/school/students",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST add Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rollNumber\": 100001,\r\n    \"firstName\" : \"Prabhunath\",\r\n    \"lastName\" : \"Yadav\",\r\n    \"classStd\": \"X\",\r\n    \"subjects\": [],\r\n    \"address\" : \"Varanasi UP India\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/school/students",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": \"60b35be5fd76e1650ee8c819\",\r\n        \"rollNumber\": 100001,\r\n        \"firstName\": \"Prabhunath\",\r\n        \"lastName\": \"Yadav\",\r\n        \"classStd\": \"X\",\r\n        \"subjects\": [],\r\n        \"address\": \"Varanasi UP India\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/school/students",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all Teacher",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/school/teachers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school",
+						"teachers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST add Teacher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"staffId\": \"T0001\",\r\n    \"firstName\" : \"John\",\r\n    \"lastName\" : \"Soe\",\r\n    \"age\": 27,\r\n    \"subjects\": [],\r\n    \"address\" : \"Varanasi UP India\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/school/teachers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school",
+						"teachers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Teacher",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"60b361e94b63985edc68a3ca\",\r\n        \"staffId\": \"T0001\",\r\n        \"firstName\": \"John\",\r\n        \"lastName\": \"Soe\",\r\n        \"age\": 27,\r\n        \"subjects\": [],\r\n        \"address\": \"Varanasi UP India\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/school/students",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all Subjects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/school/subjects",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school",
+						"subjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST add Subject",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"subjectCode\": \"E101\",\r\n    \"name\" : \"English Literature\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/school/subjects",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school",
+						"subjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE a Subject",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"subjectCode\": \"E101\",\r\n    \"name\" : \"English Literature\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/school/students",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school",
+						"students"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
