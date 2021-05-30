@@ -229,6 +229,25 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "GET SWAGGER Api Doc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v2/api-docs",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v2",
+						"api-docs"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
